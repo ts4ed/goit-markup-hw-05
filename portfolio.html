@@ -28,7 +28,8 @@
               <a class="link" href="./index.html">Студия</a>
             </li>
             <li class="items">
-              <a class="link" href="./portfolio.html">Портфолио</a>
+              <a class="link current" href="./portfolio.html">Портфолио
+              </a>
             </li>
             <li class="items">
               <a class="link" href="">Контакты</a>
@@ -311,5 +312,12 @@
         </ul>
       </div>
     </footer>
+    <script>
+      const { height: pageHeaderHeight } = document
+      .querySelector(".header .container")
+      .getBoundingClientRect();
+
+      document.body.style.paddingTop = `${pageHeaderHeight}px`;
+    </script>
   </body>
 </html>

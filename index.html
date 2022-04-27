@@ -25,7 +25,9 @@
         <nav class="nav">
           <ul class="list">
             <li class="items">
-              <a class="link" href="./index.html">Студия</a>
+              <a class="link current" href="./index.html">Студия
+                <div class="border-current"></div>
+              </a>
             </li>
             <li class="items">
               <a class="link" href="./portfolio.html">Портфолио</a>
@@ -126,13 +128,28 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list">
             <li class="items">
-              <img src="./images/box1.jpg" width="370" alt="Разработка" />
+              <div class="thumb">
+                <img src="./images/box1.jpg" width="370" alt="Разработка" />
+                <div class="description">
+                  <p class="item">Десктопные приложения</p>
+                </div>
+              </div>
             </li>
             <li class="items">
-              <img src="./images/box2.jpg" width="370" alt="Поддержка" />
+              <div class="thumb">
+                <img src="./images/box2.jpg" width="370" alt="Поддержка" />
+                <div class="description">
+                  <p class="item">Мобильные приложения</p>
+                </div>
+              </div>
             </li>
             <li class="items">
-              <img src="./images/box3.jpg" width="370" alt="Дизайн" />
+              <div class="thumb">
+                <img src="./images/box3.jpg" width="370" alt="Дизайн" />
+                <div class="description">
+                  <p class="item">Дизайнерские решения</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -435,5 +452,13 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script>
+      const { height: pageHeaderHeight } = document
+      .querySelector(".header .container")
+      .getBoundingClientRect();
+
+      document.body.style.paddingTop = `${pageHeaderHeight}px`;
+    </script>
   </body>
 </html>
