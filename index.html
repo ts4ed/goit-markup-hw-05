@@ -464,5 +464,11 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script>
+      const { height: pageHeaderHeight } = document.querySelector(".header .container")
+      .getBoundingClientRect();
+
+      document.body.style.paddingTop = `${pageHeaderHeight}px`;
+    </script>
   </body>
 </html>
