@@ -7,6 +7,16 @@
   --third-bg-color: #f5f4fa;
   --accent-text-color: #2196f3;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 body {
   justify-content: center;
   margin-left: auto;
@@ -554,9 +564,12 @@ img {
 
   color: var(--third-color-text);
 }
-.address p {
-  margin-bottom: 9px;
-  padding: 0;
+.footer .link.map {
+  color: var(--third-color-text);
+}
+.footer .link.map:hover,
+.footer .link.map:focus {
+  color: var(--accent-text-color);
 }
 
 .items-footer + .items-footer {
@@ -569,6 +582,14 @@ img {
 .footer .info:hover,
 .footer .info:focus {
   color: var(--accent-text-color);
+}
+.title-footer {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--third-color-text);
 }
 
 /* Portfolio */
