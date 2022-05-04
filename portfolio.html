@@ -20,40 +20,35 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container">
-        <a class="link logo" href="./index.html"><span class="blue">Web</span>Studio</a>
+      <div class="container header-container">
+        <a class="link logo" href="./index.html">Web<span class="logo-black">Studio</span></a>
         <nav class="nav">
           <ul class="list">
-            <li class="items">
-              <a class="link" href="./index.html">Студия</a>
+            <li class="nav-item">
+              <a class="link header-link" href="./index.html">Студия</a>
             </li>
-            <li class="items">
-              <a class="link current" href="./portfolio.html">Портфолио
-              </a>
+            <li class="nav-item">
+              <a class="link header-link current" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="items">
-              <a class="link" href="">Контакты</a>
+            <li class="nav-item">
+              <a class="link header-link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="list auth">
-          <li class="item">
-            <a class="link" href="mailto:info@devstudio.com">
-              <div class="thumb">
-                <svg class="icon-mail">
-                  <use href="./images/icons.svg#icon-mail"></use>
-                </svg>
-              </div>
+        <ul class="auth list">
+          <li class="auth-item">
+            <a class="link header-link" href="mailto:info@devstudio.com">
+              <svg class="icon mail">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a class="link" href="tel:+380961111111">
-              <div class="thumb">
-                <svg class="icon-phone">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-              </div>
+          <li class="auth-item">
+            <a class="link header-link" href="tel:+380961111111">
+              <svg class="icon phone">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
               +38 096 111 11 11</a
             >
           </li>
@@ -62,27 +57,28 @@
     </header>
 
     <!-- Main -->
+    
     <main>
       <h1 class="visually-hidden">Наше Портфолио</h1>
       <!-- Button -->
+
       <section class="section">
-        <div class="container button">
-          <h2 class="visually-hidden">Фильтр</h2>
-          <ul class="list button">
-            <li class="items">
-              <button class="button secondary" type="button">Все</button>
+        <div class="container filter">
+          <ul class="list filter-list">
+            <li class="filter-items">
+              <button class="filter-button active-filter">Все</button>
             </li>
-            <li class="items">
-              <button class="button secondary" type="button">Веб-сайты</button>
+            <li class="filter-items">
+              <button class="filter-button">Веб-сайты</button>
             </li>
-            <li class="items">
-              <button class="button secondary" type="button">Приложения</button>
+            <li class="filter-items">
+              <button class="filter-button">Приложения</button>
             </li>
-            <li class="items">
-              <button class="button secondary" type="button">Дизайн</button>
+            <li class="filter-items">
+              <button class="filter-button">Дизайн</button>
             </li>
-            <li class="items">
-              <button class="button secondary" type="button">Маркетинг</button>
+            <li class="filter-items">
+              <button class="filter-button">Маркетинг</button>
             </li>
           </ul>
         </div>
@@ -90,164 +86,156 @@
         <!-- Catalog -->
         <div class="container">
           <h2 class="visually-hidden">Варианты наших работ</h2>
-          <ul class="list catalog">
-            <li class="items">
-              <a href="" class="link-items">
-                <div class="option">
-                  <img src="./images/option1.jpg" width="370" height="294" alt="Технокряк"/>
-                  <div class="option1">
-                    <p>
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
-                  </div>
+          <ul class="list catalog card-set">
+            <li class="catalog-item card-item">
+              <a class="catalog-link" href="" target="_blank" rel="noopener noreferrer nofollow">
+                <div class="catalog-img">
+                  <img src="./images/option1.jpg" width="370" height="294" alt="Технокряк" />
+                  <p class="description-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
-                <div class="border">
+                <div class="about-variant">
                   <h3 class="title">Технокряк</h3>
                   <p class="position">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="items">
-              <a href="" class="link-items">
-                <div class="option">
-                  <img src="./images/option2.jpg" width="370" height="294" alt="Постер NBA"/>
-                  <div class="option1">
-                    <p>
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
-                  </div>
+            <li class="catalog-item card-item">
+              <a class="catalog-link" href="" target="_blank" rel="noopener noreferrer nofollow">
+                <div class="catalog-img">
+                  <img src="./images/option2.jpg" width="370" height="294" alt="Постер NBA" />
+                  <p class="description-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
-                <div class="border">
+                <div class="about-variant">
                   <h3 class="title">Постер New Orlean vs Golden Star</h3>
                   <p class="position">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="items">
-              <a href="" class="link-items">
-                <div class="option">
-                  <img src="./images/option3.jpg" width="370" height="294" alt="Ресторан Seafood"/>
-                  <div class="option1">
-                    <p>
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
-                  </div>
+            <li class="catalog-item card-item">
+              <a class="catalog-link" href="" target="_blank" rel="noopener noreferrer nofollow">
+                <div class="catalog-img">
+                  <img src="./images/option3.jpg" width="370" height="294" alt="Ресторан Seafood" />
+                  <p class="description-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
-                <div class="border">
+                <div class="about-variant">
                   <h3 class="title">Ресторан Seafood</h3>
                   <p class="position">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="items">
-              <a href="" class="link-items">
-                <div class="option">
-                  <img src="./images/option4.jpg" width="370" height="294" alt="Проект Prime"/>
-                  <div class="option1">
-                    <p>
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
-                  </div>
+            <li class="catalog-item card-item">
+              <a class="catalog-link" href="" target="_blank" rel="noopener noreferrer nofollow">
+                <div class="catalog-img">
+                  <img src="./images/option4.jpg" width="370" height="294" alt="Проект Prime" />
+                  <p class="description-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
-                <div class="border">
+                <div class="about-variant">
                   <h3 class="title">Проект Prime</h3>
                   <p class="position">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="items">
-              <a href="" class="link-items">
-                <div class="option">
-                  <img src="./images/option5.jpg" width="370" height="294" alt="Проект Boxes"/>
-                  <div class="option1">
-                    <p>
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
-                  </div>
+            <li class="catalog-item card-item">
+              <a class="catalog-link" href="" target="_blank" rel="noopener noreferrer nofollow">
+                <div class="catalog-img">
+                  <img src="./images/option5.jpg" width="370" height="294" alt="Проект Boxes" />
+                  <p class="description-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
-                <div class="border">
+                <div class="about-variant">
                   <h3 class="title">Проект Boxes</h3>
                   <p class="position">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="items">
-              <a href="" class="link-items">
-                <div class="option">
-                  <img src="./images/option6.jpg" width="370" height="294" alt="Inspiration has no Borders"/>
-                  <div class="option1">
-                    <p>
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
-                  </div>
+            <li class="catalog-item card-item">
+              <a class="catalog-link" href="" target="_blank" rel="noopener noreferrer nofollow">
+                <div class="catalog-img">
+                  <img
+                    src="./images/option6.jpg"
+                    width="370"
+                    height="294"
+                    alt="Inspiration has no Borders"
+                  />
+                  <p class="description-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
-                <div class="border">
+                <div class="about-variant">
                   <h3 class="title">Inspiration has no Borders</h3>
                   <p class="position">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="items">
-              <a href="" class="link-items">
-               <div class="option">
-                  <img src="./images/option7.jpg" width="370" height="294" alt="Издание Limited Edition"/>
-                  <div class="option1">
-                    <p>
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
-                  </div>
+            <li class="catalog-item card-item">
+              <a class="catalog-link" href="" target="_blank" rel="noopener noreferrer nofollow">
+                <div class="catalog-img">
+                  <img
+                    src="./images/option7.jpg"
+                    width="370"
+                    height="294"
+                    alt="Издание Limited Edition"
+                  />
+                  <p class="description-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
-                <div class="border">
+                <div class="about-variant">
                   <h3 class="title">Издание Limited Edition</h3>
                   <p class="position">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="items">
-              <a href="" class="link-items">
-                <div class="option">
-                  <img src="./images/option8.jpg" width="370" height="294" alt="Проект LAB"/>
-                  <div class="option1">
-                    <p>
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
-                  </div>
+            <li class="catalog-item card-item">
+              <a class="catalog-link" href="" target="_blank" rel="noopener noreferrer nofollow">
+                <div class="catalog-img">
+                  <img src="./images/option8.jpg" width="370" height="294" alt="Проект LAB" />
+                  <p class="description-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
-                <div class="border">
+                <div class="about-variant">
                   <h3 class="title">Проект LAB</h3>
                   <p class="position">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="items">
-              <a href="" class="link-items">
-                <div class="option">
-                  <img src="./images/option9.jpg" width="370" height="294" alt="Growing Business"/>
-                  <div class="option1">
-                    <p>
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
-                  </div>
+            <li class="catalog-item card-item">
+              <a class="catalog-link" href="" target="_blank" rel="noopener noreferrer nofollow">
+                <div class="catalog-img">
+                  <img src="./images/option9.jpg" width="370" height="294" alt="Growing Business" />
+                  <p class="description-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
-                <div class="border">
+                <div class="about-variant">
                   <h3 class="title">Growing Business</h3>
                   <p class="position">Приложение</p>
                 </div>
@@ -258,76 +246,81 @@
       </section>
     </main>
     <!-- Footer -->
+    
     <footer class="footer">
-      <div class="container info">
-        <a class="link logo" href="./index.html"><span class="blue">Web</span>Studio</a>
-        <address class="address">
-          <ul class="list">
-            <li class="items-footer">
-              <a
-                class="link info map"
-                href="https://goo.gl/maps/AMvUKNJv9h5WxEZ98"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
-            </li>
-            <li class="items-footer">
-              <a class="link info" href="mailto:info@example.com">info@example.com</a>
-            </li>
-            <li class="items-footer">
-              <a class="link info" href="tel:+380991111111">+38 099 111 11 11</a>
-            </li>
-          </ul>
-        </address>
-      </div>
-      <div class="container links">
-        <h2 class="title-footer">присоединяйтесь</h2>
-        <ul class="list">
-          <li class="items">
-            <a class="link" href="">
-              <div class="thumb">
+      <div class="container">
+        <div class="footer-item">
+          <a class="link logo" href="./index.html">Web<span class="logo-white">Studio</span></a>
+          <address class="address">
+            <ul class="list">
+              <li class="address-item">
+                <a
+                  class="link info"
+                  href="https://goo.gl/maps/AMvUKNJv9h5WxEZ98"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address-item">
+                <a class="link info" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="address-item">
+                <a class="link info" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-item">
+          <h2 class="social-title">присоединяйтесь</h2>
+          <ul class="list social-list">
+            <li class="items-icon">
+              <a class="icon-social" href="" target="_blank" rel="noopener noreferrer nofollow">
                 <svg class="icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
-              </div>
-            </a>
-          </li>
-          <li class="items">
-            <a class="link" href="">
-              <div class="thumb">
+              </a>
+            </li>
+            <li class="items-icon">
+              <a class="icon-social" href="" target="_blank" rel="noopener noreferrer nofollow">
                 <svg class="icon">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
-              </div>
-            </a>
-          </li>
-          <li class="items">
-            <a class="link" href="">
-              <div class="thumb">
+              </a>
+            </li>
+            <li class="items-icon">
+              <a class="icon-social" href="" target="_blank" rel="noopener noreferrer nofollow">
                 <svg class="icon">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
-              </div>
-            </a>
-          </li>
-          <li class="items">
-            <a class="link" href="">
-              <div class="thumb">
+              </a>
+            </li>
+            <li class="items-icon">
+              <a class="icon-social" href="" target="_blank" rel="noopener noreferrer nofollow">
                 <svg class="icon">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
-              </div>
-            </a>
-          </li>
-        </ul>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
     <script>
-      const { height: pageHeaderHeight } = document.querySelector(".header .container")
-      .getBoundingClientRect();
+      const { height: pageHeaderHeight } = document
+        .querySelector('.header .container')
+        .getBoundingClientRect();
 
       document.body.style.paddingTop = `${pageHeaderHeight}px`;
+    </script>
+    <script>
+      (() => {
+        document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+          e.preventDefault();
+
+          new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
+        });
+      })();
     </script>
   </body>
 </html>
